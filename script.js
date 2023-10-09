@@ -1188,30 +1188,181 @@ let myArr = [1, 2, 3, 4, 5, 6]
 //     container.appendChild(p)
 // }
 
+// let arr = ["Saleh: 1997", "Samir : 1995", "Nahid : 1996", "Nahid : 19992", "Ramin : 1999"]
+
+
+// let arr = ["Saleh", "Samir", "Nahid", "Ramin" ,"Nahid"]
+// let newarr = [...arr]
+
+
+// for (let i = 0; i < arr.length; i++) {  
+//         if(arr[i] === arr[i + 1]){
+//              console.log(arr.indexOf(arr[i]),arr.indexOf(arr[i + 1]))
+//             // arr = arr.filter((item) => item !== arr[i])
+//         }
+// }
+// console.log(arr)
+
+// let employees = [
+//     [ 'Jaylee Macy', 'marketing' ],
+//     [ 'John Smith', 'management' ],
+//     [ 'Blossom Hartley', 'design' ],
+//     [ 'Austin Carpenter', 'marketing' ],
+//     [ 'Joan Knowles', 'development' ],
+//     [ 'Sally Nunez', 'management' ],
+//     [ 'Laurel Ward', 'development' ],
+//     [ 'Lark Simon', 'marketing' ],
+//     [ 'Jane Stone', 'management' ],
+//     [ 'Courtney Olson', 'development' ],
+//   ];
+  
+// for (let index = 0; index < employees.length; index++) {
+//     const element = employees[index];
+//     if(element[1] === 'development'){
+//         console.log(element[0],element[1])
+//     }  
+// }
+
+// let newEmp = employees.filter((item) => item[1] === 'development')
+
+// console.log(newEmp)
+
+// const students = [
+//     ["Nigar","Əliyeva",85 ],
+//     ["Orxan","Məmmədov",92 ],
+//     ["Fərid","Hüseynov",75 ],
+//     ["Zahidə","Quliyeva",88 ],
+//   ];
+
+// students.sort((a,b) => a[2] - b[2])
+
+// console.log(students)
+
+// let studentsRaiting = []
+
+// students.forEach((item) => {
+//     studentsRaiting.push(item[2])
+// })
+
+// console.log(studentsRaiting)
+
+// let newStudentsRaiting = [...new Set(studentsRaiting)]
+
+// let total = newStudentsRaiting.reduce((a,b) => a + b)
+// let mediane = total / newStudentsRaiting.length
+
+// let medianeStudent = students.filter((item) => item[2] > mediane)
+// console.log(medianeStudent)
+
+// let minRaiting = Math.min(...newStudentsRaiting)
+// let maxRaiting = Math.max(...newStudentsRaiting)
+
+// console.log(minRaiting, maxRaiting)
+
+// // let minStudent = students.filter((item) => item[2] === minRaiting)
+// // let maxStudent = students.filter((item) => item[2] === maxRaiting)
+
+// console.log(students[0][0],students[0][1], students.at(-1)[0],students.at(-1)[1])
 
 
 
+// let salary = [
+//     [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+//     [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
+//     [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
+//     [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+//     [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
+//     [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75]
+// ];
+
+// let salaryArr = []
+
+// salary.forEach((item) => {
+//         let total = item.reduce((a,b) => a + b)
+//         salaryArr.push(total)
+// })
+// console.log(salaryArr)
+
+// salaryArr.sort((a,b) => a - b)
+
+// console.log(salaryArr)
+
+// console.log(salaryArr[0], salaryArr.at(-1))
+
+// let arr = [
+//     {
+//         'student Name': 'Alex',
+//         'profession': 'Developer',
+//          id:1,
+//          arr:[1,2,3,4,5]
+//     },
+//     {
+//         'student Name': 'Alex',
+//         'profession': 'Doctor',
+//         id:2
+//     },
+//     {
+//         'student Name': 'Sam',
+//         'profession': 'Developer',
+//          id:3
+//     }
+// ]
+
+// let inputStudent = 'student Name'
+// let inputProfession = 'Alex'
+// let newarr = arr.filter((item) => item[inputStudent] === inputProfession)
+
+// console.log(newarr)
+// newarr.forEach((item) => {
+//     // delete item.id
+//     console.log(item['student Name'])
+// })
+
+
+// let inputStudent = prompt()
+// let inputProfession = prompt()
 
 
 
+// // console.log(obj.studentName, obj.profession)
+
+// let newObj = new Object()
+// console.log(newObj)
+// newObj.studentName = 'Alex'
+// newObj.profession = 'Developer'
+// console.log(newObj)
+// newObj.profession = 'Doctor'
+// console.log(newObj)
+
+// delete newObj.profession
+// console.log(newObj)
+
+// console.log(obj[inputStudent], obj[inputProfession])
+
+// console.log(obj.input, newObj)
 
 
+// let arr = ["Saleh", "Samir", "Nahid", "Sam", "Ramin"]
+// let newarr = []
+// arr.forEach((item) => {
+//     let obj = {}
+//     obj.studentName = item
+//     newarr.push(obj)
+// })
+
+// console.log(newarr)
 
 
+// let obj ={
+//     marks:[1,2,3,4,5]
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(obj.arr)
 
 
 
